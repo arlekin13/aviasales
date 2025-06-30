@@ -1,0 +1,11 @@
+.app {
+    display: grid
+    ;
+        font-family: Open Sans, sans-serif;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+        margin: 20px;
+}
+.app__main {
+    margin-left: 20px;
+}
