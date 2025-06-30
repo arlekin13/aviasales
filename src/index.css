@@ -1,15 +1,15 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'Open Sans', Arial, sans-serif;
-  background-color: #F3F7FA;
-  color: #212A32;
+  background-color: #f3f7fa;
+  color: #212a32;
 }
 
 body {
@@ -19,12 +19,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
   outline: none;
   border: none;
@@ -36,6 +43,7 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }

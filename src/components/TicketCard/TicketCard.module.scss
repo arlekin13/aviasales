@@ -1,54 +1,49 @@
 .ticket-card {
-    
-    width: 502px;
-    height: 182px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-    
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-   
+  width: 502px;
+  height: 182px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.ticket-card__header { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #2196f3;
-    font-size: 24px;
-    font-weight: 700;
+.ticket-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #2196f3;
+  font-size: 24px;
+  font-weight: 700;
 }
 .ticket-card__body {
-    }
+}
 
-    .ticket-card__body-info {
-        display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 40px;
-      gap: 10px; 
-     &:first-child{
-        padding-bottom: 10px;
-     }
-    }
-    .ticket-card__body-info-text 
-    {display: flex;
-        flex-direction: column;
-        }
-    .ticket-card__body-info-text-top {
-        color: #a0a0a0;
-        font-size: 12px;
-        margin-bottom: 4px;
-        text-transform: uppercase;
-    }
-    .ticket-card__body-info-text-bottom {
-     
-font-weight: 600;
-font-size: 14px;
-line-height: 21px;
-letter-spacing: 0px;
-vertical-align: middle;
-
-    }
-   
+.ticket-card__body-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  gap: 10px;
+  &:first-child {
+    padding-bottom: 10px;
+  }
+}
+.ticket-card__body-info-text {
+  display: flex;
+  flex-direction: column;
+}
+.ticket-card__body-info-text-top {
+  color: #a0a0a0;
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.ticket-card__body-info-text-bottom {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
