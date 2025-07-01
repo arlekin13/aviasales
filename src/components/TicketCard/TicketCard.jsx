@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './TicketCard.module.scss';
 
 function TicketCard({ ticket }) {
-  console.log(ticket);
   const formatStops = (stops) => {
     if (stops.length === 0) {
       return 'БЕЗ ПЕРЕСАДОК';
@@ -13,7 +12,7 @@ function TicketCard({ ticket }) {
     if (stops.length === 2) {
       return '2 ПЕРЕСАДКИ';
     }
-    return `${stops.length} ПЕРЕСАДОК`;
+    return `3 ПЕРЕСАДКИ`;
   };
   const formatTime = (duration) => {
     const hours = Math.floor(duration / 60);
