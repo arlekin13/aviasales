@@ -80,13 +80,39 @@ function TicketList({ tickets }) {
 
   return (
     <>
+      {loadingMore && (
+        <div
+          style={{
+            textAlign: 'center',
+            fontSize: '18px',
+            color: '#1890ff',
+            fontWeight: '500',
+            margin: '20px 0',
+          }}
+        >
+          Загрузка билетов...
+        </div>
+      )}
       <div className={styles['ticket-list']}>
-        {sortedTicket.slice(0, visibleTicket).map((ticket) => (
-          <TicketCard key={ticket.id} ticket={ticket} />
-        ))}
-        {loadingMore && <div style={{ textAlign: 'center' }}>Получаем билеты...</div>}
-        {visibleTicket < sortedTicket.length && !loadingMore && !stop && (
-          <ShowMoreButton onClick={handleShowMoreTickets} />
+        {sortedTicket.length === 0 ? (
+          <div
+            style={{
+              textAlign: 'center',
+              marginTop: '20px',
+              fontSize: '18px',
+              color: '#ff4d4f',
+              fontWeight: '500',
+            }}
+          >
+            Рейсов, подходящих под заданные фильтры, не найдено
+          </div>
+        ) : (
+          <>
+            {sortedTicket.slice(0, visibleTicket).map((ticket) => (
+              <TicketCard key={ticket.id} ticket={ticket} />
+            ))}
+            {visibleTicket < sortedTicket.length && <ShowMoreButton onClick={handleShowMoreTickets} />}
+          </>
         )}
       </div>
     </>
